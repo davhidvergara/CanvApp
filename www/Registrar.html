@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" type="text/css" href="css/theme-classic.css">
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+	<script src="js/RegistrarJS.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+
+
+<div id="CrearCuenta" data-role="page" data-theme="b">
+	<div data-role="header">
+		<h2>Registro</h2>
+	</div>
+	<div data-role="content">
+		<br/>
+		<input type="text" name="nombre" placeholder="Nombre" maxlength="30"  id="nombre">
+		<input type="text" name="apellidop" placeholder="Apellido Paterno"  id="apellidop">
+		<input type="text" name="apellidom" placeholder="Apellido Materno"  id="apellidom">
+		<input type="email" name="correo" placeholder="Correo" maxlength="30"  id="correo">
+		<select name="carrera" id="carrera">
+		  <option value="TIC">TIC</option>
+		  <option value="MAI">MAI</option>
+		  <option value="DNM">DNM</option>
+		  <option value="GASTRO">GASTRO</option>
+		</select>
+		<input type="number" name="matricula" placeholder="Matricula"  id="matricula">
+		<input type="password" name="pass" placeholder="Contraseña"  id="pass">
+		<input type="password" name="repass" placeholder="Repetir Contraseña" >
+	</div>
+	<div data-role="footer" data-position="fixed" align="center">
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a">
+				<a data-rel="back" class="ui-btn" data-theme="a">Cancelar</a>
+			</div>
+			<div class="ui-block-b">
+				<input type="submit" value="Registrar" data-theme="a" id="btnRegistrar" name="btnRegistrar"/>
+			</div>
+		</fieldset>
+	</div>
+</div>
+</body>
+</html>
